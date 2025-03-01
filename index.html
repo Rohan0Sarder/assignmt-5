@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment-5</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+    <main class="overflow-hidden bg-slate-100">
+        <nav class=" flex  mt-6 mx-8 justify-between bg-white p-5 rounded-xl">
+            <div class="flex items-center gap-2">
+                <img src="./A5-Dev-Board/assets/logo.png" alt="">
+                <h1 class="text-center text-3xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+
+            <div class="flex gap-8 items-center">
+                <div class="flex items-center rounded-full gap-1 btn">
+                    <img class="h-[20px]" src="./A5-Dev-Board/assets/checkbox.png" alt="">
+                    <h1 id="lg-value" class="text-2xl rounded-full font-bold">23</h1>
+                </div>
+                <button class="btn rounded-full"><img class="h-[25px] " src="./A5-Dev-Board/assets/theme-btn.png" alt=""></button>
+            </div>
+        </nav>
+
+
+        <!-- main part -->
+        <div class=" flex gap-x-4 mt-6">
+
+            <!-- left side -->
+            <div class=" flex-grow rounded-lg bg-white ml-8">
+                <div class="flex    bg-white  rounded-lg p-4 ">
+                    <div class="flex gap-5">
+                       <div class="px-3 py-2 items-center rounded-lg gap-2 flex bg-slate-200">
+                          <div class="p-2 mx-2 rounded-full bg-white">
+                              <img class="h-[30px] p-1" src="./A5-Dev-Board/assets/checkbox.png" alt="">
+                          </div>
+                              <div>
+                                <p>Task Assigned </p>
+                                <h1 id="equeal">6</h1>
+                              </div>
+                       </div>
+        
+                       <div class="flex items-center rounded-lg p-8 w-[400px] gap-2 bg-[#9BA8F8]">
+                          <img src="./A5-Dev-Board/assets/board.png" alt="">
+                          <p class="text-white">Discover Something<br>New Today!</p>
+                       </div>
+        
+                       <div class="flex items-center gap-2 rounded-lg bg-slate-200 p-8">
+                          <div class="p-2 rounded-full bg-white">
+                             <img class="h-[30px] p-1" src="./A5-Dev-Board/assets/calender.png" alt="">
+                          </div>
+                            <h1 id="crnt-date">Wed ,<br>
+                              Jul 28 2025 </h1>
+                       </div>
+                    </div>
+                    
+                </div>
+                <hr class="border-t-2 border-dashed border-gray-400 my-4">
+
+                <!-- cards  -->
+                <div class="mx-6 py-4">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                        <div class="bg-slate-100 p-4 rounded-xl shadow-md">
+                            <p class="bg-white px-2 py-1 rounded-md text-xs">ShopEase</p>
+                            <h2 class=" card-title text-lg font-bold mt-2">Fix Mobile Button Issue</h2>
+                            <p class="text-sm p-2 rounded-md bg-white mt-1">Debug using Chrome<br>DevTools, check for overlapping..</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <p class="text-gray-500 text-sm">Deadline<br>21 March 2025</p>
+                                <button class="btn complete-btn bg-blue-500 text-white px-3 py-1 rounded-lg text-sm">Completed</button>
+                            </div>
+                        </div>
+                        <div class="bg-slate-100 p-4 rounded-xl shadow-md">
+                            <p class="bg-white px-2 py-1 rounded-md text-xs">CloudSync</p>
+                            <h2 class=" card-title text-lg font-bold mt-2">Add Dark Mode</h2>
+                            <p class="text-sm p-2 rounded-md bg-white mt-1">Store the user's preference in <br> localStorage, update CSS variables..</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <p class="text-gray-500 text-sm">Deadline<br>21 March 2025</p>
+                                <button class="btn complete-btn bg-blue-500 text-white px-3 py-1 rounded-lg text-sm">Completed</button>
+                            </div>
+                        </div>
+                        <div class="bg-slate-100 p-4 rounded-xl shadow-md">
+                            <p class="bg-white px-2 py-1 rounded-md text-xs">SwiftPay</p>
+                            <h2 class=" card-title text-lg font-bold mt-2">Optimize Home Page</h2>
+                            <p class="text-sm p-2 rounded-md bg-white mt-1">Debug using Chrome<br>DevTools, check for overlapping...</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <p class="text-gray-500 text-sm">Deadline<br>21 March 2025</p>
+                                <button class="btn complete-btn bg-blue-500 text-white px-3 py-1 rounded-lg text-sm">Completed</button>
+                            </div>
+                        </div>
+                        <div class="bg-slate-100 p-4 rounded-xl shadow-md">
+                            <p class="bg-white px-2 py-1 rounded-md text-xs">Meta</p>
+                            <h2 class=" card-title text-lg font-bold mt-2">Add new emoji 🤲</h2>
+                            <p class="text-sm p-2 rounded-md bg-white mt-1">Debug using Chrome<br>DevTools, check for overlapping..</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <p class="text-gray-500 text-sm">Deadline<br>21 March 2025</p>
+                                <button class="btn complete-btn bg-blue-500 text-white px-3 py-1 rounded-lg text-sm">Completed</button>
+                            </div>
+                        </div>
+                        <div class="bg-slate-100 p-4 rounded-xl shadow-md">
+                            <p class="bg-white px-2 py-1 rounded-md text-xs">Google LLC</p>
+                            <h2 class=" card-title text-lg font-bold mt-2">Integrate OpenAI API </h2>
+                            <p class="text-sm p-2 rounded-md bg-white mt-1">Store the user's preference in <br> localStorage, update CSS variables..</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <p class="text-gray-500 text-sm">Deadline<br>21 March 2025</p>
+                                <button class="btn complete-btn bg-blue-500 text-white px-3 py-1 rounded-lg text-sm">Completed</button>
+                            </div>
+                        </div>
+                        <div class="bg-slate-100 p-4 rounded-xl shadow-md">
+                            <p class="bg-white px-2 py-1 rounded-md text-xs">Glassdoar</p>
+                            <h2 class=" card-title text-lg font-bold mt-2">Improve Job searching </h2>
+                            <p class="text-sm p-2 rounded-md bg-white mt-1">Debug using Chrome<br>DevTools, check for overlapping...</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <p class="text-gray-500 text-sm">Deadline<br>21 March 2025</p>
+                                <button class="btn complete-btn bg-blue-500 text-white px-3 py-1 rounded-lg text-sm">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- right side -->
+            <div class="bg-white rounded-lg  w-1/4 mr-8 ">
+                <div class=" flex justify-center items-center gap-2 mt-3">
+                    <img class="h-[20px]" src="./A5-Dev-Board/assets/activity.png" alt="">
+                    <h1>Activity Log</h1>
+                
+                </div>
+                <div class="flex justify-center">
+                    <button id="clear-history" class="btn bg-[#3752FD] px-3 py-1 mt-4 text-white text-center">Clear History</button>
+                   
+                </div>
+                <hr class="border-t-2 border-dashed border-gray-400 my-4">
+                <div id="task-history">
+
+                </div>
+            </div>
+            
+            
+        </div>
+
+    </main>
+    
+
+ 
+   <script src="btn.js"></script>
+</body>
+</html>
