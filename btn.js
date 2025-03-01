@@ -2,9 +2,18 @@ let countElement = document.getElementById("equeal");
 let countValue = document.getElementById("lg-value");
 let clearHistoryBtn = document.getElementById("clear-history");
 let taskHistory = document.getElementById("task-history");
-let title = document.querySelector(".card-title")
+let title = document.querySelector(".card-title");
 let buttons = document.getElementsByClassName("complete-btn");
+
+
 for (let i = 0; i < buttons.length; i++) {
+
+   
+
+
+
+
+
     buttons[i].addEventListener("click", function () {
         let currentValue = parseInt(countElement.innerText);
         let currentNumber = parseInt(countValue.innerText);
@@ -35,9 +44,10 @@ for (let i = 0; i < buttons.length; i++) {
         clearHistoryBtn.addEventListener("click",function(){
             task.innerHTML= "";
         })
-        
+      
+       
          
         
        
     });
-}complete-btn
+}
