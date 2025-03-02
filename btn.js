@@ -4,6 +4,16 @@ let clearHistoryBtn = document.getElementById("clear-history");
 let taskHistory = document.getElementById("task-history");
 let title = document.querySelector(".card-title");
 let buttons = document.getElementsByClassName("complete-btn");
+let colorBtn = document.getElementById("color-btn");
+let mainTag = document.getElementById("main-tag");
+
+let colors = ["#FFD700", "#FF69B4", "#98FB98", "#87CEEB"];
+let currentIndex = 0;
+
+colorBtn.addEventListener("click", function () {
+    mainTag.style.backgroundColor = colors[currentIndex];
+    currentIndex = (currentIndex + 1) % colors.length;
+});
 
 window.onload = function () {
     let tarikh = new Date();
@@ -15,20 +25,6 @@ window.onload = function () {
 
     document.getElementById("crnt-date").innerText = `${day}, ${month} ${date}, ${year}`;
 };
-
-
-
-// const button = document.getElementById("color-btn");
-// const mainTag = document.getElementById("main-tag");
-
-// let colors = ["#AEB8F5", "#ECB5E5","#B7D7DE"];
-// let colorIndex = 0;
-
-// button.addEventListener("click", function(){
-//     // console.log(colors)
-//     document.mainTag.style.backgroundColor = colors [colorIndex]
-//     colorIndex = (colorIndex + 1) % colors.length;
-// })
 
 
 
