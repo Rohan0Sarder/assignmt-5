@@ -9,7 +9,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="">
-    <main class="overflow-hidden bg-slate-100">
+    <main id="main-tag" class="overflow-hidden bg-slate-100">
         <nav class=" flex  mt-6 mx-8 justify-between bg-white p-5 rounded-xl">
             <div class="flex items-center gap-2">
                 <img src="./A5-Dev-Board/assets/logo.png" alt="">
@@ -21,7 +21,7 @@
                     <img class="h-[20px]" src="./A5-Dev-Board/assets/checkbox.png" alt="">
                     <h1 id="lg-value" class="text-2xl rounded-full font-bold">23</h1>
                 </div>
-                <button class="btn rounded-full"><img class="h-[25px] " src="./A5-Dev-Board/assets/theme-btn.png" alt=""></button>
+                <button id="color-btn" class="btn rounded-full"><img class="h-[25px] " src="./A5-Dev-Board/assets/theme-btn.png" alt=""></button>
             </div>
         </nav>
 
@@ -75,7 +75,7 @@
                         <div class="bg-slate-100 p-4 rounded-xl shadow-md">
                             <p class="bg-white px-2 py-1 rounded-md text-xs">CloudSync</p>
                             <h2 class=" card-title text-lg font-bold mt-2">Add Dark Mode</h2>
-                            <p class="text-sm p-2 rounded-md bg-white mt-1">Store the user's preference in <br> localStorage, update CSS variables..</p>
+                            <p class="text-sm p-2 rounded-md bg-white mt-1">Store the user's preference in <br> localStorage, update CSS..</p>
                             <div class="mt-4 flex justify-between items-center">
                                 <p class="text-gray-500 text-sm">Deadline<br>21 March 2025</p>
                                 <button class="btn complete-btn bg-blue-500 text-white px-3 py-1 rounded-lg text-sm">Completed</button>
@@ -102,7 +102,7 @@
                         <div class="bg-slate-100 p-4 rounded-xl shadow-md">
                             <p class="bg-white px-2 py-1 rounded-md text-xs">Google LLC</p>
                             <h2 class=" card-title text-lg font-bold mt-2">Integrate OpenAI API </h2>
-                            <p class="text-sm p-2 rounded-md bg-white mt-1">Store the user's preference in <br> localStorage, update CSS variables..</p>
+                            <p class="text-sm p-2 rounded-md bg-white mt-1">Store the user's preference in <br> localStorage, update CSS..</p>
                             <div class="mt-4 flex justify-between items-center">
                                 <p class="text-gray-500 text-sm">Deadline<br>21 March 2025</p>
                                 <button class="btn complete-btn bg-blue-500 text-white px-3 py-1 rounded-lg text-sm">Completed</button>
@@ -135,7 +135,8 @@
                    
                 </div>
                 <hr class="border-t-2 border-dashed border-gray-400 my-4">
-                <div id="task-history">
+                <div id="task-history" class="">
+                   
 
                 </div>
             </div>
