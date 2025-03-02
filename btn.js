@@ -18,21 +18,17 @@ window.onload = function () {
 
 
 
-const button = document.getElementById("color-btn");
-const mainTag = document.getElementById("main-tag");
+// const button = document.getElementById("color-btn");
+// const mainTag = document.getElementById("main-tag");
 
-let colors = ["#AEB8F5", "#ECB5E5","#B7D7DE"];
-let colorIndex = 0;
+// let colors = ["#AEB8F5", "#ECB5E5","#B7D7DE"];
+// let colorIndex = 0;
 
-button.addEventListener("click", function(){
-    // console.log(colors)
-    document.mainTag.style.backgroundColor = colors [colorIndex]
-    colorIndex = (colorIndex + 1) % colors.length;
-})
-
-
-
-
+// button.addEventListener("click", function(){
+//     // console.log(colors)
+//     document.mainTag.style.backgroundColor = colors [colorIndex]
+//     colorIndex = (colorIndex + 1) % colors.length;
+// })
 
 
 
